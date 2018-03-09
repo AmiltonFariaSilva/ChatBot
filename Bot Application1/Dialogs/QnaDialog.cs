@@ -60,6 +60,5 @@ namespace Bot_Application1.Dialogs
 
             await context.PostAsync(resposta);
         }
-
-    }
+            }
 }
