@@ -62,7 +62,6 @@ C:\Users\afaria\Documents\Visual Studio 2015\Projects\Bot Application1\Bot Appli
 C:\Users\afaria\Documents\Visual Studio 2015\Projects\Bot Application1\Bot Application1\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\Users\afaria\Documents\Visual Studio 2015\Projects\Bot Application1\Bot Application1\obj\Debug\Bot Application.dll
 C:\Users\afaria\Documents\Visual Studio 2015\Projects\Bot Application1\Bot Application1\obj\Debug\Bot Application.pdb
-C:\WKS\ChatBot\Bot Application1\bin\Bot Application.dll.config
 C:\WKS\ChatBot\Bot Application1\bin\Bot Application.dll
 C:\WKS\ChatBot\Bot Application1\bin\Bot Application.pdb
 C:\WKS\ChatBot\Bot Application1\bin\Autofac.dll
@@ -127,4 +126,4 @@ C:\WKS\ChatBot\Bot Application1\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServi
 C:\WKS\ChatBot\Bot Application1\obj\Debug\Bot Application1.csproj.CoreCompileInputs.cache
 C:\WKS\ChatBot\Bot Application1\obj\Debug\Bot Application.dll
 C:\WKS\ChatBot\Bot Application1\obj\Debug\Bot Application.pdb
-C:\WKS\ChatBot\Bot Application1\obj\Debug\Bot Application1.csprojResolveAssemblyReference.cache
+C:\WKS\ChatBot\Bot Application1\obj\Debug\Bot Application1.csproj.CopyComplete
