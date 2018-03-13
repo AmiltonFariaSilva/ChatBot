@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bot Application1", "Bot Application1\Bot Application1.csproj", "{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaratonaBots", "Bot Application1\MaratonaBots.csproj", "{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55CAEFE5-38EE-49F0-8DA5-EA381065ED97}
 	EndGlobalSection
 EndGlobal
