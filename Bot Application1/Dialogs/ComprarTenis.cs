@@ -42,7 +42,7 @@ namespace Bot_Application1.Dialogs
         {
             var tenis = result.Entities?.Select(e => e.Entity); 
 
-            await context.PostAsync($"Eu Farei uma venda de tenis para você{string.Join(",", tenis.ToArray())}");
+            await context.PostAsync($"Eu Farei uma venda de tenis para você");
         }
     }
 }
