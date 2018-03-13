@@ -39,15 +39,30 @@ namespace Bot_Application1.Dialogs
                 heroCard.Buttons = new List<CardAction>
                 {
                     new CardAction{
-                        Text = "Botão 1",
+                        Text = "Comprar",
                         DisplayText = "Display",
-                        Title = "Title",
+                        Title = "Comprar",
                         Type = ActionTypes.PostBack,
-                        Value = "audiocard"
+                        Value = "Comprar"
+                    },
+
+                     new CardAction{
+                        Text = "Trocar",
+                        DisplayText = "Display",
+                        Title = "Trocar",
+                        Type = ActionTypes.PostBack,
+                        Value = "Trocar"
+
+                    },
+
+                     new CardAction{
+                        Text = "Reclamar",
+                        DisplayText = "Display",
+                        Title = "SAC",
+                        Type = ActionTypes.PostBack,
+                        Value = "Reclamar"
 
                     }
-
-
                 };
 
                 message.Attachments.Add(heroCard.ToAttachment());
