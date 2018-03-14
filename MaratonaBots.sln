@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaratonaBots", "Bot Application1\MaratonaBots.csproj", "{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAMaratonaBots", "WAMaratonaBots\WAMaratonaBots.csproj", "{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

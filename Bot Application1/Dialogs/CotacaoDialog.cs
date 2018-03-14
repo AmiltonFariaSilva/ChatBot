@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Builder.Luis;
 using Microsoft.Bot.Builder.Luis.Models;
 using Microsoft.Bot.Connector;
+using Newtonsoft.Json;
 
 namespace Bot_Application1.Dialogs
 {
@@ -43,9 +45,35 @@ namespace Bot_Application1.Dialogs
 
         public async Task Compra(IDialogContext context, LuisResult result)
         {
-            var moedas = result.Entities?.Select(e => e.Entity); 
+            var moedas = result.Entities?.Select(e => e.Entity);
+            var filtro = string.Join(",", moedas.ToArray());
 
-            await context.PostAsync($"Eu fari uma cotação para as moedas {string.Join(",", moedas.ToArray())}");
+            var endPoint = "http://api.promasters.net.br/cotacao/v1/valores/{moedas}";
+
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync(endPoint);
+
+                await context.PostAsync($"Aguarde um momento, vou verificar esses valores...");
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    await context.PostAsync($"Ocorreu algum erro, tente novamente...");
+                    return;
+                }
+                else
+                {
+                    var json = await response.Content.ReadAsStringAsync();
+
+                    var resultado = JsonConvert.DeserializeObject<Models.Resultado>(json);
+
+                    var cotacoes = resultado.Cotacoes?.Select(c => $"{c.USD.Nome} valor: {c.USD.Valor}");
+
+                    await context.PostAsync($"A API não encontrou um resultado para os valores: {string.Join(",", moedas.ToArray())}");
+                }
+            }
+
+                
         }
     }
 }
