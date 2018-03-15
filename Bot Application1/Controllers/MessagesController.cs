@@ -19,9 +19,9 @@ namespace Bot_Application1
             if (activity.Type == ActivityTypes.Message)
             {
                 //await Conversation.SendAsync(activity, () => new Dialogs.QnaDialog());
-                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
+                //await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
                 //await Conversation.SendAsync(activity, () => new Dialogs.ComprarTenis());
-                //await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
             }
             else
             {

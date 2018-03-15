@@ -5,7 +5,11 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaratonaBots", "Bot Application1\MaratonaBots.csproj", "{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{20B6D142-C681-49CA-817B-FBDBBD04F34D}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAMaratonaBots", "WAMaratonaBots\WAMaratonaBots.csproj", "{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}"
+>>>>>>> 8418c77705bfa95eb5a45cf5fa04bf84505c76d7
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,17 @@ Global
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A2F11F6-5F2A-4BCC-B9EE-390AE4F01418}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{20B6D142-C681-49CA-817B-FBDBBD04F34D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20B6D142-C681-49CA-817B-FBDBBD04F34D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20B6D142-C681-49CA-817B-FBDBBD04F34D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20B6D142-C681-49CA-817B-FBDBBD04F34D}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FEB4AF-5494-440E-B0CA-5A9B8AB4B7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 8418c77705bfa95eb5a45cf5fa04bf84505c76d7
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
