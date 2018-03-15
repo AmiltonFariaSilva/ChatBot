@@ -8,7 +8,7 @@ using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System.Threading.Tasks;
 
-namespace Bot_Application1.Dialogs
+namespace ChatBot.Dialogs
 {
     [Serializable]
     public class QnaDialog : QnAMakerDialog

@@ -8,13 +8,13 @@ namespace Bot_Application1.Models
 {
     //http://api.promasters.net.br/cotacao/v1/valores
 
-    public class Resultado
+    public class Cotacao
     {
-        public bool status { get; set; }
-        public Cotacao[] Cotacoes { get; set; }
+        public Valores valores  { get; set; }
+        public bool status  { get; set; }      
     }
 
-    public class Cotacao
+    public class Valores
     {
         public USD USD { get; set; }
         public EUR EUR { get; set; }

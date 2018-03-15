@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -46,9 +47,13 @@ namespace Bot_Application1.Dialogs
         public async Task Compra(IDialogContext context, LuisResult result)
         {
             var moedas = result.Entities?.Select(e => e.Entity);
-            var filtro = string.Join(",", moedas.ToArray());
 
-            var endPoint = "http://api.promasters.net.br/cotacao/v1/valores/{moedas}";
+            var filtro = string.Join(",", moedas.ToArray());
+            //var filtro = string.Join(",", ListaFiltros(moedas.ToArray()));
+
+            //USD,EUR
+
+            var endPoint = $"http://api.promasters.net.br/cotacao/v1/valores?moedas={filtro}&alt=json";
 
             using (var client = new HttpClient())
             {
@@ -65,15 +70,14 @@ namespace Bot_Application1.Dialogs
                 {
                     var json = await response.Content.ReadAsStringAsync();
 
-                    var resultado = JsonConvert.DeserializeObject<Models.Resultado>(json);
+                    var resultado = JsonConvert.DeserializeObject<Models.Cotacao>(json);
 
-                    var cotacoes = resultado.Cotacoes?.Select(c => $"{c.USD.Nome} valor: {c.USD.Valor}");
-
-                    await context.PostAsync($"A API não encontrou um resultado para os valores: {string.Join(",", moedas.ToArray())}");
+                    await context.PostAsync($"A API encontrou um resultado para os valores: {resultado.valores.USD.Nome} {resultado.valores.USD.Valor}...");//{string.Join(",", moedas.ToArray())}");
+                    
                 }
             }
-
-                
         }
+        
+        //criar uma classe que traduza o dolar para sigla        
     }
 }
