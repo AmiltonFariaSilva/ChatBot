@@ -64,9 +64,6 @@ C:\WKS\ChatBot\Bot Application1\bin\fa\Microsoft.Bot.Builder.CognitiveServices.Q
 C:\WKS\ChatBot\Bot Application1\bin\fr\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\WKS\ChatBot\Bot Application1\bin\ja\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
 C:\WKS\ChatBot\Bot Application1\bin\zh-hans\Microsoft.Bot.Builder.CognitiveServices.QnAMaker.resources.dll
-C:\WKS\ChatBot\Bot Application1\bin\pt-br\System.Net.Http.Formatting.resources.dll
-C:\WKS\ChatBot\Bot Application1\bin\pt-br\System.Web.Http.resources.dll
-C:\WKS\ChatBot\Bot Application1\bin\pt-br\System.Web.Http.WebHost.resources.dll
 C:\WKS\ChatBot\Bot Application1\obj\Debug\MaratonaBots.csproj.App.config
 C:\WKS\ChatBot\Bot Application1\obj\Debug\MaratonaBots.csproj.CoreCompileInputs.cache
 C:\WKS\ChatBot\Bot Application1\obj\Debug\MaratonaBots.csproj.CopyComplete
@@ -144,3 +141,4 @@ C:\Users\afaria\Documents\GitHub\ChatBot\Bot Application1\obj\Debug\MaratonaBots
 C:\Users\afaria\Documents\GitHub\ChatBot\Bot Application1\obj\Debug\Bot Application.dll
 C:\Users\afaria\Documents\GitHub\ChatBot\Bot Application1\obj\Debug\Bot Application.pdb
 C:\Users\afaria\Documents\GitHub\ChatBot\Bot Application1\obj\Debug\MaratonaBots.csprojResolveAssemblyReference.cache
+C:\WKS\ChatBot\Bot Application1\obj\Debug\MaratonaBots.csprojResolveAssemblyReference.cache

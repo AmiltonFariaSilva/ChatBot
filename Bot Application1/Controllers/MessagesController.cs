@@ -1,8 +1,11 @@
-﻿using System.Net;
+﻿using System;
+using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Builder.FormFlow;
 using Microsoft.Bot.Connector;
 
 namespace Bot_Application1
@@ -18,10 +21,25 @@ namespace Bot_Application1
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                //await Conversation.SendAsync(activity, () => new Dialogs.QnaDialog());
+                await this.sendConversation(activity);
+                //await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
                 //await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
                 //await Conversation.SendAsync(activity, () => new Dialogs.ComprarTenis());
-                await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
+                //await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
+                //await Conversation.SendAsync(activity, () => new Dialogs.CotacaoDialog());
+            }
+            else if (activity.Type == ActivityTypes.ConversationUpdate)
+            {
+                if (activity.MembersAdded != null && activity.MembersAdded.Any())
+                {
+                    foreach (var members in activity.MembersAdded)
+                    {
+                        if (members.Id != activity.Recipient.Id)
+                        {
+                            await this.sendConversation(activity);
+                        }
+                    }
+                }
             }
             else
             {
@@ -29,6 +47,11 @@ namespace Bot_Application1
             }
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
+        }
+
+        private async Task sendConversation(Activity activity)
+        {
+            await Conversation.SendAsync(activity,  () => Chain.From(() => FormDialog.FromForm(() => Formularios.Pedido.BuildForm(), FormOptions.PromptFieldsWithValues)));
         }
 
         private Activity HandleSystemMessage(Activity message)
